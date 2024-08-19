@@ -5,9 +5,11 @@ import React from "react";
 // let { name, email, age, location } = userProfile;
 
 // ダイナミックルーティング
+// http://localhost:3000/products/0002
+// 商品名:0002
 // ReactのuseSearchParams見たくparams定義しなくていい
 export const page = ({ params }: { params: { productId: string } }) => {
-  console.log(params);
+  // 商品詳細ページ
   return <div>商品名:{params.productId}</div>;
 };
 
