@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 // 開発者モード-要素-<head>にあるtitleとmetadata(SEOのGoogle検索時のリンクタイトルと説明にあたる)
 // layout.tsxに書いた内容が全てのページに反映される
-export const metadata = {
-  title: "サイトのタイトル",
+export const metadata: Metadata = {
+  title: {
+    // page.tsxに指定がないときの表示内容
+    default: "サイトのタイトル",
+    // page.tsxに渡すことができるテンプレート
+    template: "%s | CodeTips株式会社",
+  },
   description: "サイトの説明文です",
 };
 
