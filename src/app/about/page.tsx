@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import React from "react";
 
 // layout.tsxとpage.tsxを両方書いたときにはpage.tsxが優先される
@@ -8,7 +9,11 @@ export const metadata: Metadata = {
 };
 
 export const page = () => {
-  return <div>アバウトpage</div>;
+  return (
+    <div>
+      アバウトpage<Link href="/">トップへ戻る</Link>
+    </div>
+  );
 };
 
 export default page;
