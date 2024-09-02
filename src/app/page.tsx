@@ -17,6 +17,9 @@ export const page = () => {
       <div>
         <Link href="/order">注文情報</Link>
       </div>
+      <div>
+        <Link href="/news">お知らせ一覧</Link>
+      </div>
     </div>
   );
 
