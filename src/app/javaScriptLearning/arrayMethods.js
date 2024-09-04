@@ -46,7 +46,7 @@ const titleList = articles.map((articles) => {
 });
 console.log(titleList); // [ 'aaa', 'bbb', 'ccc', 'ddd' ]
 
-// forEachは処理を繰り返し実行する(何も返さない)
+// forEach: 処理を繰り返し実行する(何も返さない)
 const titles = articles.forEach((article) => {
   console.log(article.title);
   // aaa
