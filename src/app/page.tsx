@@ -20,6 +20,9 @@ export const page = () => {
       <div>
         <Link href="/news">お知らせ一覧</Link>
       </div>
+      <div>
+        <Link href="/sgSsr/1">SGとSSR</Link>
+      </div>
     </div>
   );
 
